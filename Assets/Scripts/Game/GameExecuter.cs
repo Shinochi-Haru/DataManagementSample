@@ -21,7 +21,7 @@ class GameExecuter : MonoBehaviour
     {
         //マスタデータの読み込みをする
         //マスタデータ側に情報をリレーして更新処理を実行する
-        await MasterData.Instance.Setup(true, () =>
+        await MasterData.Instance.Setup(false, () =>
         {
             Debug.Log("here");
         });

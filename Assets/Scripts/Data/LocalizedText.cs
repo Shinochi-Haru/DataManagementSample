@@ -48,14 +48,7 @@ namespace Outgame
         }
 
 #if UNITY_EDITOR
-        void OnEnable()
-        {
-            var text = MasterData.GetLocalizedText(_textKey);
-            if (text == null) return;
-
-            _text.text = text;
-        }
-        void OnDisable()
+        void OnGUI()
         {
             var text = MasterData.GetLocalizedText(_textKey);
             if (text == null) return;
